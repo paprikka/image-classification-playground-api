@@ -7,9 +7,9 @@ from fastai import *
 app = Flask(__name__)
 
 
-@app.route("/foo")
-def health():
-    return "oi hi its me temme"
+@app.route("/")
+def index():
+    return "Hello 🌏"
 
 
 @app.route("/predict", methods=['POST'])
